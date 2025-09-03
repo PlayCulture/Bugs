@@ -31,7 +31,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   
-  bool firstScannerActive = false;
+  bool firstScannerActive = true;
   bool secondScannerActive = false;
 
   void toggleSecondScanner() async {
@@ -89,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: 
       FloatingActionButton(onPressed: toggleSecondScanner, tooltip: 'Toggle Second Scanner', child: 
-        const Icon(Icons.add),
+        const Icon(Icons.refresh),
       ),
     );
   }
